@@ -10,6 +10,5 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="jenkins_demo_projFlow" doc:id="3129c6e0-fca2-4188-9037-e27fd8a4db9b" >
 		<http:listener doc:name="Listener" doc:id="15569019-e001-4c08-ad1f-5b1f46cde622" config-ref="HTTP_Listener_config" path="/employees"/>
 		<set-payload value='#["payload msg"]' doc:name="Set Payload" doc:id="9d1df291-220d-4589-a3aa-24ee20ebb5a2" />
-		<logger level="INFO" doc:name="Logger" doc:id="9ff38b0e-7337-4e58-bdf5-ea29edd5c042" message="payload"/>
 	</flow>
 </mule>
